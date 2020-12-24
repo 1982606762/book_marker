@@ -69,6 +69,7 @@ newLinkForm.addEventListener('submit', (event) => {
         .then(clearform)
         .then(renderlinks)
         .catch(error=>rendererrmsg(error.url));//其他错误
+    linksSection.innerHTML='';
 })
 
 clearStorageButton.addEventListener('click',()=>{

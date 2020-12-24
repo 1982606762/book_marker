@@ -1,0 +1,19 @@
+{
+  "name": "bookmarker",
+  "version": "1.0.0",
+  "description": "a simple bookmarker",
+  "productName":"S1mple Bookmarker",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "macOS-package":"electron-packager . --platform=darwin --arch=x64 --out=../out --asar --overwrite --ignore=node_modules",
+    "win64-package":"electron-packager . --platform=win32 --arch=x64 --out=../out --asar --overwrite --ignore=node_modules"
+
+  },
+  "author": "Zxl",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.1.1"
+  }
+}

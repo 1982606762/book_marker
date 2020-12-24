@@ -79,7 +79,7 @@ clearStorageButton.addEventListener('click',()=>{
 linksSection.addEventListener('click',(event)=>{
     if(event.target.href){
         event.preventDefault();
-        shell.openExternal(event.target.href);//使用shell来从默认浏览器内打开链接
+        shell.openExternal(event.target.innerHTML);//使用shell来从默认浏览器内打开链接
     }
 })
 
